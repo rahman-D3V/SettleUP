@@ -547,7 +547,7 @@ export default function LandingPage() {
       </div>
 
       <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-400">
-        <p className="mx-auto max-w-[800px] text-slate-600 text-xl md:text-2xl leading-relaxed">
+        <div className="mx-auto max-w-[800px] text-slate-600 text-xl md:text-2xl leading-relaxed">
           Whether you're{" "}
           <span className="font-semibold text-purple-600 relative">
             traveling
@@ -564,7 +564,7 @@ export default function LandingPage() {
             <div className="absolute -bottom-1 left-0 right-0 h-2 bg-rose-200/50 rounded"></div>
           </span>
           , Splitr makes money simple.
-        </p>
+        </div>
       </div>
 
       {/* Add a separator with animation */}
