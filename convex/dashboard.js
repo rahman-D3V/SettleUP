@@ -66,7 +66,7 @@ export const getUserBalances = query({
       const base = {
         userId: uid,
         name: counterpart?.name ?? "Unknown",
-        imageUrl: counterpart?.imageUrl,
+        imageUrl: counterpart?.imageURL,
         amount: Math.abs(net),
       };
       net > 0 ? youAreOwedByList.push(base) : youOweList.push(base);

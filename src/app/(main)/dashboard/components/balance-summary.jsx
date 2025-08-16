@@ -33,7 +33,7 @@ export default function BalanceSummary({ balances }) {
               >
                 <div className="flex items-center gap-2">
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src={item.imageUrl} />
+                    <AvatarImage src={item.imageURL} />
                     <AvatarFallback>{item.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <span className="text-sm">{item.name}</span>

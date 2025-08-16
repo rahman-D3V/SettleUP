@@ -81,7 +81,7 @@ export default function ContactsPage() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <Avatar className="h-10 w-10">
-                            <AvatarImage src={user.imageUrl} />
+                            <AvatarImage src={user.imageURL} />
                             <AvatarFallback>
                               {user.name.charAt(0)}
                             </AvatarFallback>

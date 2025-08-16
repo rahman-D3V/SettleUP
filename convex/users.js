@@ -102,7 +102,7 @@ export const searchUsers = query({
         id: user._id,
         name: user.name,
         email: user.email,
-        imageUrl: user.imageUrl,
+        imageUrl: user.imageURL,
       }));
   },
 });

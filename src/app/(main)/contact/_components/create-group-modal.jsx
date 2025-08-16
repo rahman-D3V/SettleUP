@@ -145,7 +145,7 @@ export function CreateGroupModal({ isOpen, onClose, onSuccess }) {
               {currentUser && (
                 <Badge variant="secondary" className="px-3 py-1">
                   <Avatar className="h-5 w-5 mr-2">
-                    <AvatarImage src={currentUser.imageUrl} />
+                    <AvatarImage src={currentUser.imageURL} />
                     <AvatarFallback>
                       {currentUser.name?.charAt(0) || "?"}
                     </AvatarFallback>
@@ -162,7 +162,7 @@ export function CreateGroupModal({ isOpen, onClose, onSuccess }) {
                   className="px-3 py-1"
                 >
                   <Avatar className="h-5 w-5 mr-2">
-                    <AvatarImage src={member.imageUrl} />
+                    <AvatarImage src={member.imageURL} />
                     <AvatarFallback>
                       {member.name?.charAt(0) || "?"}
                     </AvatarFallback>
@@ -223,7 +223,7 @@ export function CreateGroupModal({ isOpen, onClose, onSuccess }) {
                           >
                             <div className="flex items-center gap-2">
                               <Avatar className="h-6 w-6">
-                                <AvatarImage src={user.imageUrl} />
+                                <AvatarImage src={user.imageURL} />
                                 <AvatarFallback>
                                   {user.name?.charAt(0) || "?"}
                                 </AvatarFallback>
