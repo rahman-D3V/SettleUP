@@ -216,6 +216,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { ColourfulText } from "@/components/ui/colourful-text";
 import { CometCard } from "@/components/ui/comet-card";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
+import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 
 // Enhanced data structures
 const STATS = [
@@ -1094,7 +1095,9 @@ export default function LandingPage() {
             <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               Loved by{" "}
               <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
-                thousands
+                <ContainerTextFlip  animationDuration='700'
+      words={["Thousands", "Millions", "Customers", "Users"]}
+    />  
               </span>{" "}
               worldwide
             </h2>
