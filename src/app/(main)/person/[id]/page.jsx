@@ -69,17 +69,18 @@ export default function PersonExpensesPage() {
 
           <div className="flex gap-2">
             <Button asChild variant="outline">
-              <Link href={`/settlements/user/${params.id}`}>
+              <button onClick={() => router.push(`/settlements/user/${params.id}`)}>
                 <ArrowLeftRight className="mr-2 h-4 w-4" />
                 Settle up
-              </Link>
+              </button>
             </Button>
             <Button asChild>
-              <Link href={`/expenses/new`}>
+               <button onClick={() => router.push(`/expenses/new`)}>
                 <PlusCircle className="mr-2 h-4 w-4" />
-                Add expense sdksadmkandjnjn
-              </Link>
+                Add expense
+               </button>
             </Button>
+
           </div>
         </div>
       </div>
