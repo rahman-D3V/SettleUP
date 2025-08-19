@@ -166,24 +166,24 @@ const PRICING_TIERS = [
 
 const FAQ_DATA = [
   {
-    question: "How does Splitr handle privacy and security?",
+    question: "How does SettleUP handle privacy and security?",
     answer:
       "We use bank-level encryption (AES-256) for all data transmission and storage. We never store your banking credentials and follow strict privacy policies. Your financial data is completely secure with us.",
   },
   {
-    question: "Can I use Splitr without an internet connection?",
+    question: "Can I use SettleUP without an internet connection?",
     answer:
       "Yes! You can add expenses and view your data offline. All changes will automatically sync when you reconnect to the internet, ensuring you never lose any information.",
   },
   {
-    question: "What payment methods does Splitr support?",
+    question: "What payment methods does SettleUP support?",
     answer:
-      "Splitr integrates with major payment platforms including PayPal, Venmo, bank transfers, Apple Pay, Google Pay, and Stripe. You can settle debts directly through the app using your preferred method.",
+      "SettleUP integrates with major payment platforms including PayPal, Venmo, bank transfers, Apple Pay, Google Pay, and Stripe. You can settle debts directly through the app using your preferred method.",
   },
   {
     question: "Is there a limit to the number of expenses I can track?",
     answer:
-      "No limits! All plans include unlimited expense tracking. Whether you're splitting a coffee bill or managing a month-long trip with friends, Splitr scales with your needs.",
+      "No limits! All plans include unlimited expense tracking. Whether you're splitting a coffee bill or managing a month-long trip with friends, SettleUP scales with your needs.",
   },
   {
     question: "How accurate is the receipt scanning feature?",
@@ -200,10 +200,10 @@ const FAQ_DATA = [
 const people = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
+    name: "Khabib",
+    designation: "MMA Fighter",
     image:
-      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+      "https://i.pinimg.com/736x/c5/22/f8/c522f8780ddfa3a1a2eb7a536c39f363.jpg",
   },
   {
     id: 2,
@@ -214,10 +214,10 @@ const people = [
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: "Tony Stark",
+    designation: "Businessman",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://i.pinimg.com/originals/72/b7/8f/72b78f48b101dd4e80fd5ec289917257.jpg",
   },
   {
     id: 4,
@@ -228,10 +228,10 @@ const people = [
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
+    name: "SRK",
+    designation: "Actor",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+      "https://i0.wp.com/www.opindia.com/wp-content/uploads/2023/01/srk.jpg?resize=696%2C398&ssl=1",
   },
   {
     id: 6,
@@ -329,19 +329,24 @@ export default function LandingPage() {
 
           {/* Enhanced social proof */}
           <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-800">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-slate-600 mt-16 p-6 bg-white/50 backdrop-blur-sm rounded-2xl border border-slate-200/50 shadow-lg">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-3">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-slate-600 mt-16 p-8 bg-white/50 backdrop-blur-sm rounded-2xl border border-slate-200/50 shadow-lg ">
+              
+              <div className="flex items-center gap-8">
+
+
+                <div className="flex -space-x-3 bg-red-400 h-1 ">
                   <div className="flex flex-row items-center justify-center mb-10 w-full">
                     <AnimatedTooltip items={people} />
                   </div>
                 </div>
 
-                <div className="font-semibold text-slate-700">
+                <div className="font-semibold text-slate-700 ">
                   Trusted by <span className="text-emerald-600">50,000+</span>{" "}
                   users worldwide
                 </div>
               </div>
+
+
               <div className="flex items-center gap-2">
                 <div className="flex gap-1">
                   {[1, 2, 3, 4, 5].map((i) => (
@@ -368,7 +373,7 @@ export default function LandingPage() {
                   src="/hero.png"
                   width={1400}
                   height={800}
-                  alt="Splitr Dashboard - Beautiful expense tracking interface"
+                  alt="SettleUP Dashboard - Beautiful expense tracking interface"
                   className="rounded-2xl mx-auto group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
@@ -479,7 +484,7 @@ export default function LandingPage() {
                   hanging out
                   <div className="absolute -bottom-1 left-0 right-0 h-2 bg-rose-200/50 rounded"></div>
                 </span>
-                , Splitr makes money simple.
+                , SettleUP makes money simple.
               </div>
             </div>
 
@@ -692,7 +697,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-6xl gap-16 md:grid-cols-3 relative">
+          <div className="mx-auto grid max-w-6xl gap-16 md:grid-cols-3 relative ">
             {/* Enhanced connection lines */}
             <div className="hidden md:block absolute top-12 left-1/6 right-1/6 h-1 bg-gradient-to-r from-emerald-300 via-blue-300 to-purple-300 rounded-full opacity-50"></div>
 
@@ -914,7 +919,7 @@ export default function LandingPage() {
               worldwide
             </h2>
             <p className="mx-auto max-w-[700px] text-slate-600 text-xl leading-relaxed">
-              See what our amazing community has to say about their Splitr
+              See what our amazing community has to say about their SettleUP
               experience.
             </p>
           </div>
@@ -959,80 +964,58 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ───── Enhanced FAQ Section ───── */}
-      <section className="py-24 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="text-center mb-16">
-            <Badge
-              variant="outline"
-              className="bg-blue-50 text-blue-700 border-blue-200 mb-6"
-            >
-              <MessageSquare className="w-4 h-4 mr-2" />
-              FAQ
-            </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-              Got{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                questions?
-              </span>
-            </h2>
-            <p className="text-slate-600 text-xl leading-relaxed">
-              Everything you need to know about Splitr. Can't find what you're
-              looking for?
-              <Link
-                href="/contact"
-                className="text-emerald-600 hover:underline font-semibold ml-2"
-              >
-                Contact our friendly support team →
-              </Link>
-            </p>
-          </div>
 
-          <div className="space-y-6">
-            {FAQ_DATA.map((faq, index) => (
-              <Card
-                key={index}
-                className="border-2 border-slate-200 hover:border-emerald-300 hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom duration-1000"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardContent className="p-8">
-                  <details className="group">
-                    <summary className="flex items-center justify-between cursor-pointer list-none">
-                      <h3 className="text-xl font-bold text-slate-900 pr-4 group-hover:text-emerald-600 transition-colors duration-300">
-                        {faq.question}
-                      </h3>
-                      <div className="text-emerald-600 group-open:rotate-45 transition-transform duration-300">
-                        <svg
-                          className="w-6 h-6"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 4v16m8-8H4"
-                          />
-                        </svg>
-                      </div>
-                    </summary>
-                    <div className="mt-4 pt-4 border-t border-slate-200">
-                      <p className="text-slate-600 leading-relaxed text-lg">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  </details>
-                </CardContent>
-              </Card>
-            ))}
+
+
+      {/* ───── Enhanced FAQ Section ───── */}
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+  <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+    {/* Header */}
+    <div className="text-center mb-14">
+      <span className="inline-flex items-center px-3 py-1 rounded-full text-blue-700 bg-blue-50 text-sm font-medium mb-4">
+        <MessageSquare className="w-4 h-4 mr-2" />
+        FAQ
+      </span>
+      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+        Got{" "}
+        <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          questions?
+        </span>
+      </h2>
+      <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+        Everything you need to know about SettleUP. Can’t find the answer?{" "}
+        <a href="/contact" className="text-emerald-600 hover:underline font-semibold">
+          Contact our support →
+        </a>
+      </p>
+    </div>
+
+    {/* FAQ */}
+    <div className="space-y-3">
+      {FAQ_DATA.map((faq, index) => (
+        <details key={index} className="group border border-slate-200 rounded-lg overflow-hidden">
+          <summary className="cursor-pointer flex justify-between items-center text-lg font-semibold text-slate-900 p-5 hover:bg-slate-50 transition-colors duration-300">
+            {faq.question}
+            <span className="transition-transform duration-300 group-open:rotate-180">
+              <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div className="max-h-0 overflow-hidden transition-all duration-500 group-open:max-h-96 p-5 pt-0 text-slate-600 text-base leading-relaxed">
+            {faq.answer}
           </div>
-        </div>
-      </section>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* ───── Enhanced Final CTA Section ───── */}
-      <section className="py-32 bg-gradient-to-br from-emerald-600 via-blue-600 to-purple-700 relative overflow-hidden">
-        {/* Enhanced background decorations */}
+      {/* <section className="py-32 bg-gradient-to-br from-emerald-600 via-blue-600 to-purple-700 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-300/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -1089,7 +1072,6 @@ export default function LandingPage() {
                 Bank-level security
               </p>
 
-              {/* Enhanced trust indicators */}
               <div className="flex flex-wrap items-center justify-center gap-8 text-blue-100">
                 <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
                   <Shield className="w-5 h-5" />
@@ -1107,7 +1089,9 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
 
       {/* ───── Enhanced Footer ───── */}
       <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
@@ -1116,7 +1100,7 @@ export default function LandingPage() {
           <div className="py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-5">
             <div className="lg:col-span-2 space-y-6">
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-white">Splitr</h3>
+                <h3 className="text-2xl font-bold text-white">SettleUP</h3>
                 <p className="text-lg leading-relaxed max-w-md">
                   The smartest way to split expenses with friends. Track, split,
                   and settle up with complete ease.
@@ -1211,7 +1195,7 @@ export default function LandingPage() {
           <div className="border-t border-slate-800 py-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
               <p className="text-slate-400">
-                © {new Date().getFullYear()} Splitr. All rights reserved. Made
+                © {new Date().getFullYear()} SettleUP. All rights reserved. Made
                 with ❤️ for better friendships.
               </p>
               <div className="flex items-center gap-6 text-slate-400">
