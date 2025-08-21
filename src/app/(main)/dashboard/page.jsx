@@ -166,7 +166,7 @@ export default function Dashboard() {
                   <div className="flex items-center justify-between">
                     <CardTitle>Your Groups</CardTitle>
                     <Button variant="link" asChild className="p-0">
-                      <Link href="/contact">
+                      <Link href="/contact  ">
                         View all
                         <ChevronRight className="ml-1 h-4 w-4" />
                       </Link>
