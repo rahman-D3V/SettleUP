@@ -27,7 +27,7 @@ const HeroSection = () => {
               className="bg-gradient-to-r from-emerald-50 to-blue-50 text-emerald-700 border-emerald-200 hover:shadow-lg transition-all duration-300 px-4 py-2"
             >
               <Sparkles className="w-4 h-4 mr-2 animate-spin" />
-              New: AI-Powered Receipt Scanning is here! 🎉
+              We split the bills, not the bonds.
             </Badge>
           </div>
 
@@ -129,34 +129,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Enhanced hero image with floating elements */}
-        <div className="container mx-auto max-w-7xl animate-in fade-in slide-in-from-bottom duration-1500 delay-1000">
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 group">
-              <div className="bg-gradient-to-br from-emerald-500 via-blue-500 to-purple-500 p-2">
-                <Image
-                  src="/hero.png"
-                  width={1400}
-                  height={800}
-                  alt="SettleUP Dashboard - Beautiful expense tracking interface"
-                  className="rounded-2xl mx-auto group-hover:scale-105 transition-transform duration-700"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Floating UI elements */}
-            <div className="absolute -top-6 -right-6 bg-emerald-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
-              New Features! 🚀
-            </div>
-            <div className="absolute -bottom-4 -left-4 bg-white text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-lg border-2 border-emerald-200">
-              💳 Split in seconds
-            </div>
-            <div className="absolute top-1/4 -left-8 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg rotate-12">
-              AI-Powered ✨
-            </div>
-          </div>
-        </div>
+        
       </section>
   )
 }

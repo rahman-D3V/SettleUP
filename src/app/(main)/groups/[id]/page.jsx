@@ -48,7 +48,7 @@ export default function GroupExpensesPage() {
   const userLookupMap = data?.userLookupMap || {};
 
   return (
-    <div className="container mx-auto py-6 max-w-4xl">
+    <div className="container mx-auto py-6 max-w-4xl px-10 sm:px-0">
       <div className="mb-6">
         <Button
           variant="outline"

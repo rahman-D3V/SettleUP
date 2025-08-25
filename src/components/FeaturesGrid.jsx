@@ -31,10 +31,11 @@ const FeaturesGrid = () => {
 
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
             {FEATURES.map(({ title, Icon, bg, color, description }, index) => (
-              <CometCard>
+              <div className={`${index > 2 && 'hidden md:block'}`} key={index}>
+                <CometCard>
                 <Card
                   key={title}
-                  className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 shadow-lg bg-white animate-in fade-in slide-in-from-bottom duration-1000"
+                  className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 shadow-lg bg-white animate-in fade-in slide-in-from-bottom "
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardContent className="p-8 text-center space-y-6">
@@ -54,6 +55,7 @@ const FeaturesGrid = () => {
                   </CardContent>
                 </Card>
               </CometCard>
+              </div>
             ))}
           </div>
         </div>

@@ -18,8 +18,8 @@ const Header = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed top-0 w-full border-b bg-red-500/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/60">
-      <header className="fixed top-0 w-full border-b bg-white/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/60">
+    <div className="fixed top-0 w-full border-b bg-red-500/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/60 ">
+      <header className="fixed top-0 w-full border-b bg-white/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/90 px-5 sm:px-20">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -53,7 +53,7 @@ const Header = () => {
               <Link href="/dashboard">
                 <Button
                   variant="outline"
-                  className="hidden md:inline-flex items-center gap-2 hover:text-green-600 hover:border-green-600 transition"
+                  className="hidden md:inline-flex items-center gap-2 cursor-pointer hover:text-green-600 hover:border-green-600 transition"
                 >
                   <LayoutDashboard className="h-4 w-4" />
                   Dashboard
@@ -68,11 +68,11 @@ const Header = () => {
 
             <Unauthenticated>
               <SignInButton>
-                <Button variant="ghost">Sign In</Button>
+                <Button className="cursor-pointer" variant="ghost">Sign In</Button>
               </SignInButton>
 
               <SignUpButton>
-                <Button className="bg-green-600 hover:bg-green-700 border-none">
+                <Button className="bg-green-600 hover:bg-green-700 border-none cursor-pointer">
                   Get Started
                 </Button>
               </SignUpButton>

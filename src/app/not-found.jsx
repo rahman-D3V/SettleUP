@@ -1,7 +1,10 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const NotFound = () => {
+  const router = useRouter();
   return (
     <div>
           <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
@@ -49,7 +52,7 @@ const NotFound = () => {
         {/* Action Buttons */}
         <div className="space-y-4">
           <Link href="/">
-            <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl mb-5">
               <span className="flex items-center justify-center">
                 <svg
                   className="w-5 h-5 mr-2"
@@ -70,7 +73,7 @@ const NotFound = () => {
           </Link>
 
           <button
-           
+            onClick={() => router.back()}
             className="w-full border-2 border-green-500 text-green-600 hover:bg-green-50 font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105"
           >
             <span className="flex items-center justify-center">
@@ -87,7 +90,7 @@ const NotFound = () => {
                   d="M10 19l-7-7m0 0l7-7m-7 7h18"
                 />
               </svg>
-              Go Back
+              <p> Go Back</p>
             </span>
           </button>
         </div>

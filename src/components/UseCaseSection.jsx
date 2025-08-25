@@ -6,7 +6,7 @@ import { avatar1, USE_CASES } from "@/lib/data";
 
 const UseCaseSection = () => {
   return (
-    <section className="py-32 bg-gradient-to-br from-white via-purple-50/30 to-pink-50/20 relative overflow-hidden">
+    <section className="py-15 md:py-32 bg-gradient-to-br from-white via-purple-50/30 to-pink-50/20 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-3xl animate-pulse"></div>
@@ -15,13 +15,13 @@ const UseCaseSection = () => {
       </div>
 
       {/* Floating decorative elements */}
-      <div className="absolute top-20 left-20 text-4xl animate-bounce delay-500">
+      <div className="hidden md:inline-block absolute top-20 left-20 text-4xl animate-bounce delay-500">
         ✨
       </div>
-      <div className="absolute top-32 right-32 text-3xl animate-bounce delay-1000">
+      <div className="hidden md:inline-block absolute top-32 right-32 text-3xl animate-bounce delay-1000">
         💫
       </div>
-      <div className="absolute bottom-20 left-32 text-3xl animate-bounce delay-1500">
+      <div className="hidden md:inline-block absolute bottom-20 left-32 text-3xl animate-bounce delay-1500">
         🌟
       </div>
 
@@ -142,7 +142,7 @@ const UseCaseSection = () => {
         </div>
 
         {/* decorative bottom section */}
-        <div className="text-center mt-20 animate-in fade-in duration-1000 delay-1000">
+        <div className="text-center mt-10 md:mt-15 animate-in fade-in duration-1000 delay-1000">
           <div className="inline-flex items-center gap-4 bg-white/80 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg border border-purple-100">
             <div className="flex -space-x-2">
               {avatar1.map((item) => (

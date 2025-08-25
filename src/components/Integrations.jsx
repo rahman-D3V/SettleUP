@@ -8,7 +8,7 @@ const Integrations = () => {
    
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="mb-16">
           <Badge
@@ -31,11 +31,11 @@ const Integrations = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8 max-w-4xl mx-auto">
+        <div className="hidden md:flex flex-wrap justify-center items-center gap-8 max-w-4xl mx-auto">
           {INTEGRATIONS.map(({ name, logo }, index) => (
             <div
               key={name}
-              className="group flex items-center gap-3 bg-white rounded-2xl p-6 shadow-lg border-2 border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom duration-1000"
+              className="group flex items-center gap-3 bg-white rounded-2xl p-6 shadow-lg border-2 border-slate-100 hover:border-emerald-200 hover:shadow-xl transition-all duration-300 animate-in fade-in slide-in-from-bottom d"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-3xl group-hover:scale-110 transition-transform duration-300">

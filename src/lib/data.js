@@ -26,59 +26,56 @@ const avatar = [
 
 const FAQ_DATA = [
   {
-    question: "How does SettleUP handle privacy and security?",
+    question: "How does SettleUP's smart settlement algorithm work?",
     answer:
-      "We use bank-level encryption (AES-256) for all data transmission and storage. We never store your banking credentials and follow strict privacy policies. Your financial data is completely secure with us.",
+      "Our algorithm automatically calculates the most efficient way to settle debts within your group, minimizing the number of transactions needed. Instead of everyone paying everyone back individually, we determine the optimal payment flow so fewer people need to make transfers.",
   },
   {
-    question: "Can I use SettleUP without an internet connection?",
+    question: "Can I split expenses in different ways besides equally?",
     answer:
-      "Yes! You can add expenses and view your data offline. All changes will automatically sync when you reconnect to the internet, ensuring you never lose any information.",
+      "Absolutely! SettleUP supports multiple split types including equal splits, percentage-based splits, and exact amount splits. Whether someone ordered more food, used a bigger room, or contributed differently to shared expenses, you can customize the split to match the real situation.",
   },
   {
-    question: "What payment methods does SettleUP support?",
+    question: "How do payment reminders work?",
     answer:
-      "SettleUP integrates with major payment platforms including PayPal, Venmo, bank transfers, Apple Pay, Google Pay, and Stripe. You can settle debts directly through the app using your preferred method.",
+      "SettleUP sends automated, friendly reminders to group members who have outstanding balances. You can customize reminder frequency and tone, and the system provides insights on spending patterns to help everyone stay on top of shared expenses without awkward conversations",
   },
   {
-    question: "Is there a limit to the number of expenses I can track?",
+    question: "Can I use SettleUP for different types of groups and events?",
     answer:
-      "No limits! All plans include unlimited expense tracking. Whether you're splitting a coffee bill or managing a month-long trip with friends, SettleUP scales with your needs.",
+      "Yes! SettleUP works perfectly for travel with friends, roommate expenses, dinner parties, team events, and any group spending scenario. You can create separate groups for different occasions and manage multiple expense categories simultaneously.",
   },
   {
-    question: "How accurate is the receipt scanning feature?",
+    question: "Do I see updates in real-time when expenses are added?",
     answer:
-      "Our AI-powered receipt scanning has 95%+ accuracy rate. It can extract amounts, dates, merchant names, and even individual items from receipts. You can always review and edit the extracted data before saving.",
+      "Yes, SettleUP provides real-time updates across all devices. The moment someone in your group adds an expense or makes a payment, everyone sees the changes instantly. This keeps everyone informed and prevents duplicate entries or confusion.",
   },
   {
-    question: "Can I export my expense data?",
+    question: " Is there a limit to how many people can be in a group or how much money we can split?",
     answer:
-      "Yes! Pro and Teams users can export their data to Excel, PDF, or CSV formats. This is perfect for tax purposes, reimbursements, or keeping personal records.",
+      "No limits! SettleUP handles groups of any size and has successfully processed over €2.3M in split expenses. Whether it's a small dinner with 3 friends or a large team event with 50+ people, our platform scales to meet your needs with 99.9% uptime reliability.",
   },
 ];
 
 
 const TESTIMONIALS = [
-  {
+   {
     quote:
-      "Ye babu rao ka style hai! With SettleUP, I finally stopped getting confused about who paid for what!",
-    name: "Babu Rao",
-    image: "/testimonials/babubhaiya.png",
-    role: "Rental Property Manager",
+      "This app saved our friend group! No more awkward money talks after dinners or trips. Splitting bills is now effortless.",
+    name: "Priya Sharma",
+    role: "Marketing Manager",
   },
   {
     quote:
-      "SettleUP's calculations are so accurate, they're even better than my scheme to double money in 25 days!",
-    name: "Raju",
-    image: "/testimonials/raju.jpg",
-    role: "Stock Market Expert",
+      "We planned a Europe trip with 8 friends, and it handled every expense beautifully. Settling up at the end was a breeze.",
+    name: "Sophia Rodriguez",
+    role: "Travel Blogger",
   },
   {
     quote:
-      "If that I have SettleUP, Raju wont get away with selling my shoes and coat! I'll add to his debt!",
-    name: "Shyam",
-    image: "/testimonials/shyam.png",
-    role: "Job Searcher",
+      "As a startup founder, I use this with my small team for office lunches and shared costs. It keeps things transparent.",
+    name: "David Kim",
+    role: "Startup Founder",
   },
 ];
 
@@ -247,7 +244,7 @@ const people = [
     name: "Robert Johnson",
     designation: "Product Manager",
     image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=",
   },
   {
     id: 3,
