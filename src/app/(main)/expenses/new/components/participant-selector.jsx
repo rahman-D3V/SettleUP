@@ -2,9 +2,6 @@
 
 import { useState } from "react";
 import { useUser } from "@clerk/nextjs";
-// import { useConvexQuery } from "@/hooks/use-convex-query";
-// import { api } from "@/convex/_generated/api";
-api
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { X, UserPlus } from "lucide-react";

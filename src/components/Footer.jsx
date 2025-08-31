@@ -19,7 +19,7 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Trust indicators - better mobile layout */}
+            
             <div className="space-y-3">
               <div className="flex -space-x-2">
                 {avatar.map((item) => (
@@ -60,7 +60,7 @@ const Footer = () => {
                   (item) => (
                     <li key={item}>
                       <Link
-                        href={`/${item.toLowerCase()}`}
+                        href={`#`}
                         className="hover:text-emerald-400 transition-colors duration-300 text-sm md:text-base"
                       >
                         {item}
@@ -77,7 +77,7 @@ const Footer = () => {
                 {["About", "Blog", "Careers", "Press", "Contact"].map((item) => (
                   <li key={item}>
                     <Link
-                      href={`/${item.toLowerCase()}`}
+                      href={`#`}
                       className="hover:text-emerald-400 transition-colors duration-300 text-sm md:text-base"
                     >
                       {item}
@@ -100,7 +100,7 @@ const Footer = () => {
               ].map((item) => (
                 <li key={item}>
                   <Link
-                    href={`/${item.toLowerCase().replace(" ", "-")}`}
+                    href={`#`}
                     className="hover:text-emerald-400 transition-colors duration-300 text-sm md:text-base"
                   >
                     {item}
@@ -120,19 +120,19 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4 text-slate-400 text-sm">
               <Link
-                href="/privacy"
+                href="#"
                 className="hover:text-emerald-400 transition-colors"
               >
                 Privacy
               </Link>
               <Link
-                href="/terms"
+                href="#"
                 className="hover:text-emerald-400 transition-colors"
               >
                 Terms
               </Link>
               <Link
-                href="/cookies"
+                href="#"
                 className="hover:text-emerald-400 transition-colors"
               >
                 Cookies

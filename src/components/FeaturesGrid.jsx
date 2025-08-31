@@ -7,7 +7,7 @@ import { CometCard } from './ui/comet-card'
 
 const FeaturesGrid = () => {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-10 mb-10 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <Badge

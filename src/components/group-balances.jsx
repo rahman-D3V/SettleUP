@@ -6,17 +6,6 @@ import { ArrowUpCircle, ArrowDownCircle } from "lucide-react";
 import { api } from "../../convex/_generated/api";
 import { useConvexQuery } from "../../hooks/use-convex-query";
 
-/**
- * Expected `balances` shape (one object per member):
- * {
- *   id:           string;           // user id
- *   name:         string;
- *   imageUrl?:    string;
- *   totalBalance: number;           // + ve ⇒ they are owed, – ve ⇒ they owe
- *   owes:   { to: string;   amount: number }[];  // this member → others
- *   owedBy: { from: string; amount: number }[];  // others → this member
- * }
- */
 export default function GroupBalances({ balances }) {
   const { data: currentUser } = useConvexQuery(api.users.getCurrentUser);
 

@@ -18,16 +18,16 @@ const Header = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed top-0 w-full border-b bg-red-500/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/60 ">
-      <header className="fixed top-0 w-full border-b bg-white/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/90 px-5 sm:px-20">
+    <div className="fixed top-0 w-full border-b bg-red-500/95 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/90 ">
+      <header className="fixed top-0 w-full border-b bg-white/90 backdrop-blur z-50 supports-[backdrop-filter]:bg-white/90 px-5 sm:px-20">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src={"/next.svg"}
-              alt="Splitr Logo"
-              width={1}
-              height={60}
-              className="h-5 w-auto object-contain"
+              src={"/h_logo.png"}
+              alt="SettleUP Logo"
+              width={100}
+              height={100}
+              className="h-10 w-auto object-contain"
             />
           </Link>
 
@@ -44,6 +44,13 @@ const Header = () => {
                 className="text-sm font-medium hover:text-green-600 transition"
               >
                 How It Works
+              </Link>
+
+              <Link
+                href="/ping-us"
+                className="text-sm font-medium hover:text-green-600 transition"
+              >
+                Ping us
               </Link>
             </div>
           )}

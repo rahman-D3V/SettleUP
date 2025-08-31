@@ -26,7 +26,7 @@ const UseCaseSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative">
-        {/* Enhanced header section */}
+        {/*   header section */}
         <div className="text-center mb-20 space-y-8">
           <div className="animate-in fade-in slide-in-from-top duration-1000">
             <Badge
@@ -78,7 +78,7 @@ const UseCaseSection = () => {
           </div>
         </div>
 
-        {/* Enhanced cards grid */}
+        {/*   cards grid */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
           {USE_CASES.map(({ title, description, emoji, color }, index) => (
             <div
@@ -102,7 +102,7 @@ const UseCaseSection = () => {
                 </div>
 
                 <CardContent className="relative p-10 text-center space-y-6 h-full flex flex-col justify-between">
-                  {/* Enhanced emoji with multiple effects */}
+                  {/*   emoji with multiple effects */}
                   <div className="relative">
                     <div className="text-7xl mb-6 group-hover:scale-125 transition-all duration-500 group-hover:rotate-12 filter drop-shadow-lg">
                       <span className="inline-block group-hover:animate-bounce">

@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import { useConvexQuery } from "@/hooks/use-convex-query";
-// import { api } from "@/convex/_generated/api";
 api
 import { BarLoader } from "react-spinners";
 import { Users } from "lucide-react";

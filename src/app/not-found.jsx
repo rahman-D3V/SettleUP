@@ -99,7 +99,7 @@ const NotFound = () => {
         <div className="mt-12 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
           <h3 className="font-semibold text-gray-800 mb-3">Need Help?</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <Link href="/contact">
+            <Link href="/ping-us">
               <span className="flex items-center text-gray-600 hover:text-green-600 cursor-pointer transition-colors">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

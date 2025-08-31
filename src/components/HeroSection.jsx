@@ -51,7 +51,7 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          {/* Enhanced description */}
+         
           <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-400">
             <p className="mx-auto max-w-[800px] text-xl text-slate-600 leading-relaxed md:text-2xl/relaxed">
               Track shared expenses, split bills effortlessly, and settle up
@@ -61,7 +61,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* Enhanced CTA buttons */}
+          
           <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-600">
             <div className="flex flex-col items-center gap-6 sm:flex-row justify-center">
               <Button
@@ -87,12 +87,11 @@ const HeroSection = () => {
               </Button>
             </div>
             <p className="mt-4 text-sm text-slate-500">
-              ✨ No credit card required • ⚡ Setup in 30 seconds • 🔒
-              Bank-level security
+              ✨ No credit card required • ⚡ Setup in 30 seconds
             </p>
           </div>
 
-          {/* Enhanced social proof */}
+          
           <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-800">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-slate-600 mt-16 p-8 bg-white/50 backdrop-blur-sm rounded-2xl border border-slate-200/50 shadow-lg ">
               

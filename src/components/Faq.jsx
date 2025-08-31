@@ -22,7 +22,7 @@ const Faq = () => {
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             Everything you need to know about SettleUP. Can’t find the answer?{" "}
             <a
-              href="/contact"
+              href="/ping-us"
               className="text-emerald-600 hover:underline font-semibold"
             >
               Contact our support →

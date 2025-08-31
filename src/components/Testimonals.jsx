@@ -18,7 +18,7 @@ const Testimonals = () => {
             <Star className="w-4 h-4 mr-2" />
             Customer Love
           </Badge>
-          <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+          <h2  className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
             Loved by{" "}
             <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
               <ContainerTextFlip
